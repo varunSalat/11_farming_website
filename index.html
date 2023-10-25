@@ -149,20 +149,115 @@
       </div>
     </section>
     <!--! ===================WHAT WE OFFER SECTION======================== -->
-    <!-- <section class="section">
+    <section class="section">
       <div class="section_header_container">
         <p>Our Services</p>
         <h6>What We Offer</h6>
       </div>
-      <div class="what_we_offer_card_container">
+      <div class="what_we_offer_card_container flex">
         <div class="what_we_offer_card">
           <figure>
             <img src="./assets/home/service-01.webp" alt="" srcset="" />
           </figure>
-          <div class="what_we_offer_card_dis"></div>
+          <div class="what_we_offer_card_dis">
+            <p>
+              Agriculture <br />
+              Products
+            </p>
+          </div>
+        </div>
+        <div class="what_we_offer_card">
+          <figure>
+            <img src="./assets/home/service-02.webp" alt="" srcset="" />
+          </figure>
+          <div class="what_we_offer_card_dis">
+            <p>
+              Organic
+              <br />
+              Products
+            </p>
+          </div>
+        </div>
+        <div class="what_we_offer_card">
+          <figure>
+            <img src="./assets/home/service-03.webp" alt="" srcset="" />
+          </figure>
+          <div class="what_we_offer_card_dis">
+            <p>
+              Fresh <br />
+              Vegetables
+            </p>
+          </div>
+        </div>
+        <div class="what_we_offer_card">
+          <figure>
+            <img src="./assets/home/service-04.webp" alt="" srcset="" />
+          </figure>
+          <div class="what_we_offer_card_dis">
+            <p>
+              Dairy <br />
+              Products
+            </p>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
+
+    <!--! ===================VIDEO SECTION======================== -->
+    <div class="video_container hide">
+      <div class="video_inner_container">
+        <button class="video_close_btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <video controls>
+          <source
+            src="
+              http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+            "
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </div>
+    <section class="video_section section">
+      <div class="completed_work_container flex">
+        <!-- <figure class="completed_work_bg">
+          <img src="./assets/home/wheats-2.webp" alt="" srcset="" />
+        </figure> -->
+        <div class="completed_work_card">
+          <h5>6,420</h5>
+          <p>Agriculture Products</p>
+        </div>
+        <div class="completed_work_card">
+          <h5>6,420</h5>
+          <p>Agriculture Products</p>
+        </div>
+        <div class="completed_work_card">
+          <h5>6,420</h5>
+          <p>Agriculture Products</p>
+        </div>
+        <div class="completed_work_card">
+          <h5>6,420</h5>
+          <p>Agriculture Products</p>
+        </div>
+      </div>
+      <div class="video_main_container flex">
+        <div class="video_left_container">
+          <h3>
+            Agriculture <br />
+            Matters to the <br />
+            Future of <br />
+            Development
+          </h3>
+        </div>
+        <div class="video_right_container">
+          <button class="video_play_btn">
+            <i class="fa-solid fa-play"></i>
+            <div class="ripple"></div>
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
   <!-- !SCRIPTS -->
 
@@ -172,4 +267,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <!-- CUSTOM JS -->
   <script src="./scripts/main.js"></script>
+  <script>
+    const videoContainer = document.querySelector(".video_container"),
+      videoPlayBtn = document.querySelector(".video_play_btn"),
+      videoCloseBtn = document.querySelector(".video_close_btn");
+    videoPlayBtn.addEventListener("click", () =>
+      videoContainer.classList.remove("hide")
+    );
+    videoCloseBtn.addEventListener("click", () =>
+      videoContainer.classList.add("hide")
+    );
+  </script>
 </html>
