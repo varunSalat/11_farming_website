@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apexrim</title>
+    <title>Apexrim | Products</title>
 
     <!-- !GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,24 +21,25 @@
       referrerpolicy="no-referrer"
     />
     <!-- !STYLES -->
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="stylesheet" href="../../styles/responsive.css" />
+    <link rel="stylesheet" href="./product.css" />
   </head>
   <body>
     <header class="flex">
       <div class="logo">
-        <a href="#"><img src="./assets/logo_without_bg.png" alt="Apexrim" /></a>
+        <a href="#"
+          ><img src="../../assets/logo_without_bg.png" alt="Apexrim"
+        /></a>
       </div>
       <nav>
         <ul class="flex nav_link_container">
-          <li><a class="nav_link_btn active_nav" href="./">HOME</a></li>
-          <li><a class="nav_link_btn" href="./about-us.html">ABOUT US</a></li>
+          <li><a class="nav_link_btn" href="../">HOME</a></li>
+          <li><a class="nav_link_btn" href="#">ABOUT US</a></li>
           <li>
-            <a class="nav_link_btn" href="./products">PRODUCTS</a>
+            <a class="nav_link_btn active_nav" href="../products/">PRODUCTS</a>
           </li>
-          <li>
-            <a class="nav_link_btn" href="./contact-us.html">CONTACT US</a>
-          </li>
+          <li><a class="nav_link_btn" href="#">CONTACT US</a></li>
         </ul>
       </nav>
       <button class="nav_link_btn">
@@ -52,158 +53,75 @@
     </header>
     <!--! ===================HERO SECTION======================== -->
     <section class="hero_section">
-      <div class="hero_slider">
-        <!-- <img
-          class="hero_img active"
-          src="./assets/imageSlider/1.jpg"
-          alt="hero_img"
-        /> -->
-        <img
-          class="hero_img active"
-          src="./assets/imageSlider/2.jpg"
-          alt="hero_img"
-        />
-      </div>
       <div class="hero_dis">
-        <h3 class="hero_dis_small_header">We are</h3>
-        <h1 class="hero_dis_header">Apexrim</h1>
-        <h1 class="hero_dis_header">International</h1>
-        <p class="hero_dis_text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
-          adipisci impedit doloribus autem eligendi optio.
+        <h4>Our Shop</h4>
+        <p class="hero_dis_navigate">
+          <a href="#">Home</a> / <a href="#">Products</a>
         </p>
-        <a href="#" id="hero_btn" class="inquiry_btn">EXPLORE</a>
       </div>
     </section>
 
-    <!--! ===================OUR SERVICES SECTION======================== -->
-    <section class="section" id="our_service_section">
-      <div class="service_card_container flex">
-        <div class="service_card">
-          <h3>Feature 01</h3>
-          <h2>We're using a new technology</h2>
-          <div class="service_card_btn_icon">
-            <i class="fa-solid fa-tractor"></i>
-          </div>
-        </div>
-        <div class="service_card">
-          <h3>Feature 01</h3>
-          <h2>We're using a new technology</h2>
-          <div class="service_card_btn_icon">
-            <i class="fa-solid fa-wheat-awn"></i>
-          </div>
-        </div>
-        <div class="service_card">
-          <h3>Feature 01</h3>
-          <h2>We're using a new technology</h2>
-          <div class="service_card_btn_icon">
-            <i class="fa-solid fa-person-digging"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--! ===================ABOUT US SECTION======================== -->
-    <section class="section">
-      <div class="about_us_home_section_container flex">
-        <div class="about_us_home_section_left_container">
-          <div class="about_us_main_image_container">
-            <figure class="about_us_main_img">
-              <img src="./assets/home/aboutus.webp" alt="" />
-
-              <!-- <img
-                src="./assets/home/plants-01.svg"
-                class="plant_1"
-                alt=""
-                srcset=""
-              /> -->
-            </figure>
-            <figure class="plant_2">
-              <img src="./assets/home/plants-02.svg" alt="" srcset="" />
-            </figure>
-            <figure class="secondary_img">
-              <img src="./assets/home/secondaryaboutus.webp" alt="" srcset="" />
-            </figure>
-          </div>
-        </div>
-        <div class="about_us_home_section_right_container">
-          <p class="our_intro_small_header">Our Introductions</p>
-          <h4 class="our_intro_main_header">
-            Agriculture & Organic <br />
-            Product Farm
-          </h4>
-          <h3 class="our_intro_secondary_header">
-            Apexrim International is the largest global organic farm.
-          </h3>
-          <p class="our_intro_dis">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            consectetur ipsam optio obcaecati autem rerum exercitationem
-            perspiciatis asperiores unde ipsa esse nostrum pariatur molestias
-            doloribus iure, ea fugiat deserunt tempora. Distinctio ab soluta
-            molestias, velit pariatur optio ipsam facere vero.
-          </p>
-          <p class="our_intro_dis">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            consectetur ipsam optio obcaecati autem rerum exercitationem
-            perspiciatis asperiores unde ipsa esse nostrum pariatur molestias
-            doloribus iure, ea fugiat deserunt tempora. Distinctio ab soluta
-            molestias, velit pariatur optio ipsam facere vero.
-          </p>
-          <a href="#" class="discover_more_btn">Discover More</a>
-        </div>
-      </div>
-    </section>
-    <!--! ===================WHAT WE OFFER SECTION======================== -->
-    <section class="section">
+    <!--! ===================OUR PRODUCTS SECTION======================== -->
+    <section class="section" id="our_product_section">
       <div class="section_header_container">
-        <p>Our Services</p>
-        <h6>What We Offer</h6>
+        <p>Explore</p>
+        <h6>OUR PRODUCTS</h6>
       </div>
-      <div class="what_we_offer_card_container flex">
-        <div class="what_we_offer_card">
+      <div class="our_products_container flex">
+        <a href="../singleProductPage/" class="our_product_card">
           <figure>
-            <img src="./assets/home/service-01.webp" alt="" srcset="" />
+            <img src="https://shorturl.at/jJNU1" alt="" srcset="" />
           </figure>
-          <div class="what_we_offer_card_dis">
-            <p>
-              Agriculture <br />
-              Products
-            </p>
+          <div class="our_product_dis">
+            <h3>Cumin seeds</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing...</p>
           </div>
-        </div>
-        <div class="what_we_offer_card">
+        </a>
+        <a href="../singleProductPage/" class="our_product_card">
           <figure>
-            <img src="./assets/home/service-02.webp" alt="" srcset="" />
+            <img src="https://shorturl.at/jsvwN" alt="" srcset="" />
           </figure>
-          <div class="what_we_offer_card_dis">
-            <p>
-              Organic
-              <br />
-              Products
-            </p>
+          <div class="our_product_dis">
+            <h3>Potato</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing...</p>
           </div>
-        </div>
-        <div class="what_we_offer_card">
+        </a>
+        <a href="../singleProductPage/" class="our_product_card">
           <figure>
-            <img src="./assets/home/service-03.webp" alt="" srcset="" />
+            <img src="https://shorturl.at/dUXY2" alt="" srcset="" />
           </figure>
-          <div class="what_we_offer_card_dis">
-            <p>
-              Fresh <br />
-              Vegetables
-            </p>
+          <div class="our_product_dis">
+            <h3>Row Cotton</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing...</p>
           </div>
-        </div>
-        <div class="what_we_offer_card">
+        </a>
+        <a href="../singleProductPage/" class="our_product_card">
           <figure>
-            <img src="./assets/home/service-04.webp" alt="" srcset="" />
+            <img src="https://shorturl.at/jAHL1" alt="" srcset="" />
           </figure>
-          <div class="what_we_offer_card_dis">
-            <p>
-              Dairy <br />
-              Products
-            </p>
+          <div class="our_product_dis">
+            <h3>Basmati Rice</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing...</p>
           </div>
-        </div>
+        </a>
+        <a href="../singleProductPage/" class="our_product_card">
+          <figure>
+            <img src="https://shorturl.at/dkX06" alt="" srcset="" />
+          </figure>
+          <div class="our_product_dis">
+            <h3>Wheat</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing...</p>
+          </div>
+        </a>
+        <a href="../singleProductPage/" class="our_product_card">
+          <figure>
+            <img src="https://rb.gy/46cig" alt="" srcset="" />
+          </figure>
+          <div class="our_product_dis">
+            <h3>Sugar Cane</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing...</p>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -225,33 +143,32 @@
     </div>
     <section class="video_section section">
       <div class="completed_work_container flex">
-        <!-- <figure class="completed_work_bg">
-          <img src="./assets/home/wheats-2.webp" alt="" srcset="" />
-        </figure> -->
         <div class="completed_work_card">
-          <h5>6,420</h5>
-          <p>Agriculture Products</p>
+          <h5>Quality Standards</h5>
+          <figure class="completed_work_figure">
+            <img src="https://shorturl.at/qrsNU" alt="" srcset="" />
+          </figure>
         </div>
         <div class="completed_work_card">
-          <h5>6,420</h5>
-          <p>Agriculture Products</p>
+          <h5>Organic Farming</h5>
+          <figure class="completed_work_figure">
+            <img src="https://shorturl.at/CMWX5" alt="" srcset="" />
+          </figure>
         </div>
         <div class="completed_work_card">
-          <h5>6,420</h5>
-          <p>Agriculture Products</p>
-        </div>
-        <div class="completed_work_card">
-          <h5>6,420</h5>
-          <p>Agriculture Products</p>
+          <h5>Agriculture Products</h5>
+          <figure class="completed_work_figure">
+            <img src="https://shorturl.at/sEFY0" alt="" srcset="" />
+          </figure>
         </div>
       </div>
       <div class="video_main_container flex">
         <div class="video_left_container">
           <h3>
-            Agriculture <br />
-            Matters to the <br />
-            Future of <br />
-            Development
+            <span class="block_span"> Watch our products </span>
+            <span class="block_span"> in Video </span>
+            <span class="block_span"> to take a glimpse of it </span>
+            <span class="block_span"> Quality and freshness </span>
           </h3>
         </div>
         <div class="video_right_container">
@@ -268,7 +185,7 @@
       <div class="why_choose_us_main_container flex">
         <div class="why_choose_us_left_container">
           <figure class="why_choose_us_img_container">
-            <img src="./assets/home/farmer.webp" alt="" srcset="" />
+            <img src="../../assets/home/farmer.webp" alt="" srcset="" />
           </figure>
           <div class="why_choose_us_img_bg"></div>
         </div>
@@ -324,10 +241,20 @@
         </div>
       </div>
     </section>
+    <!--! ===================WHY CHOOSE US======================== -->
+    <section class="section contact_us_banner flex">
+      <div class="left_banner_container">
+        <h4>
+          We are the best Agriculture export <br />
+          You'll find so let's connect and work!!!
+        </h4>
+      </div>
+      <a href="#" class="contact_us_banner_btn">Contact Us</a>
+    </section>
     <footer class="footer flex">
       <div class="footer_container">
         <figure class="footer_logo">
-          <img src="./assets/logo_without_bg.png" alt="" srcset="" />
+          <img src="../../assets/logo_without_bg.png" alt="" srcset="" />
         </figure>
         <p>
           There are many variations of passages of lorem ipsum available, but
@@ -386,7 +313,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <!-- CUSTOM JS -->
-  <script src="./scripts/main.js"></script>
+  <script src="../../scripts/main.js"></script>
   <script>
     const videoContainer = document.querySelector(".video_container"),
       videoPlayBtn = document.querySelector(".video_play_btn"),

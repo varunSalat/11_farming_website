@@ -189,6 +189,15 @@
 }
 
 /* !COMPLETED WORK SECTION */
+@media screen and (max-width: 1290px) {
+  .video_inner_container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .video_inner_container video {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 600px) {
   .video_play_btn {
     font-size: calc(var(--primary_header));
@@ -244,5 +253,12 @@
   }
   .why_choose_us_main_container {
     gap: 4em;
+  }
+}
+
+/* !FOOTER */
+@media screen and (max-width: 550px) {
+  .footer_container {
+    width: 100%;
   }
 }
