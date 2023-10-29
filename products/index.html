@@ -26,6 +26,11 @@
     <link rel="stylesheet" href="./product.css" />
   </head>
   <body>
+    <section id="loader_section">
+      <figure>
+        <img src="../assets/logo_without_bg.png" alt="" srcset="" />
+      </figure>
+    </section>
     <header class="flex">
       <div class="logo">
         <a href="#"
@@ -313,16 +318,5 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <!-- CUSTOM JS -->
-  <script src="../../scripts/main.js"></script>
-  <script>
-    const videoContainer = document.querySelector(".video_container"),
-      videoPlayBtn = document.querySelector(".video_play_btn"),
-      videoCloseBtn = document.querySelector(".video_close_btn");
-    videoPlayBtn.addEventListener("click", () =>
-      videoContainer.classList.remove("hide")
-    );
-    videoCloseBtn.addEventListener("click", () =>
-      videoContainer.classList.add("hide")
-    );
-  </script>
+  <script src="./products.js"></script>
 </html>

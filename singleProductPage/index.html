@@ -26,6 +26,11 @@
     <link rel="stylesheet" href="./singleProduct.css" />
   </head>
   <body>
+    <section id="loader_section">
+      <figure>
+        <img src="../assets/logo_without_bg.png" alt="" srcset="" />
+      </figure>
+    </section>
     <header class="flex">
       <div class="logo">
         <a href="#"
@@ -62,6 +67,48 @@
 
     <!--! =================== PRODUCT DETAIL SECTION======================== -->
     <section class="section flex" id="product_detail_section">
+      <div class="product_contact_us_form_container">
+        <form class="product_contact_us_form">
+          <div class="close_btn_container flex">
+            <h4>Enquiry Form</h4>
+            <span onclick="handleContactFormClose()">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+          <div class="product_form_input_container flex">
+            <label for="name">Name*</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              id="name"
+            />
+          </div>
+          <div class="product_form_input_container flex">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your Email"
+              id="email"
+            />
+          </div>
+          <div class="product_form_input_container flex">
+            <label for="num">Phone Number*</label>
+            <input
+              type="number"
+              name="num"
+              placeholder="Enter your Email"
+              id="num"
+            />
+          </div>
+          <div class="product_form_input_container flex">
+            <label for="dis">Description</label>
+            <textarea name="dis" id="dis" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit" class="discover_more_btn">Submit Form</button>
+        </form>
+      </div>
       <div class="product_detail_left_container">
         <figure>
           <img src="https://shorturl.at/jJNU1" alt="" srcset="" />
@@ -102,7 +149,9 @@
             choose Apexrim International for the finest cumin seeds that stand
             out in terms of taste, purity, and nutritional value.
           </p>
-          <button class="discover_more_btn">Contact Us</button>
+          <button onclick="handleContactFormOpen()" class="discover_more_btn">
+            Contact Us
+          </button>
         </div>
       </div>
     </section>
@@ -294,16 +343,5 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <!-- CUSTOM JS -->
-  <script src="../../scripts/main.js"></script>
-  <script>
-    const videoContainer = document.querySelector(".video_container"),
-      videoPlayBtn = document.querySelector(".video_play_btn"),
-      videoCloseBtn = document.querySelector(".video_close_btn");
-    videoPlayBtn.addEventListener("click", () =>
-      videoContainer.classList.remove("hide")
-    );
-    videoCloseBtn.addEventListener("click", () =>
-      videoContainer.classList.add("hide")
-    );
-  </script>
+  <script src="./singleProduct.js"></script>
 </html>

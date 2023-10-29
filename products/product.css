@@ -1,5 +1,6 @@
 .hero_section {
   height: 40vh;
+  min-height: 400px;
   position: relative;
   background: url(../../assets/products/home.jpg) bottom/cover no-repeat;
   background-attachment: fixed;

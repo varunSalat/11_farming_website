@@ -87,6 +87,36 @@ button {
   border: none;
   cursor: pointer;
 }
+
+/* !LOADER ANIMATION */
+#loader_section {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  opacity: 1;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+#loader_section.hide {
+  opacity: 0;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+}
+#loader_section figure {
+  width: 200px;
+}
 /* !REUSABLE CLASSES */
 
 .flex {
@@ -190,6 +220,19 @@ header {
   -moz-transition: var(--three_mili);
   -ms-transition: var(--three_mili);
   -o-transition: var(--three_mili);
+}
+.nav_link_btn {
+  transition: all 0.6s ease;
+  opacity: 0;
+  transform: translateY(-80px);
+  -webkit-transform: translateY(-80px);
+  -moz-transform: translateY(-80px);
+  -ms-transform: translateY(-80px);
+  -o-transform: translateY(-80px);
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
 }
 
 .inquiry_btn:hover {
